@@ -1,17 +1,21 @@
+import 'package:classico/Views/Counter_UI.dart';
 import 'package:flutter/material.dart';
-class MainDart extends StatefulWidget {
-  const MainDart({super.key});
+void main(){
+  runApp(MyApp());
+}
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
 
   @override
-  State<MainDart> createState() => _MainDartState();
+  State<MyApp> createState() => _MainDartState();
 }
 
-class _MainDartState extends State<MainDart> {
+class _MainDartState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ,
+      home: CounterUi()
     );
   }
 }
